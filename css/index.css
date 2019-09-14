@@ -66,18 +66,34 @@ p {
     line-height: 1.4;
 }
 
+nav {
+    text-decoration: none;
+}
+
 .container {
     width: 800px;
     margin: 0 auto;
 }
 
-.nav-bar {
+.header-container {
     display: flex;
-    justify-content: space-around;
-    font-family: Arial;
-    margin-top: 50px;
-    padding-bottom: 1%;
-}   
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-top: 50px;
+
+}
+
+.header-container a {
+    padding: 30px;
+    color: grey;
+    text-decoration: none;
+}
+
+.logo {
+    position: relative;
+    bottom: 30px;
+    padding-top: 5px;
+}
 
 .top-content {
     display: flex;
@@ -85,6 +101,10 @@ p {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+}
+
+.jumbo-img {
+    padding-bottom: 22px;
 }
 
 .top-content .text-container {
