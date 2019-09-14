@@ -1,3 +1,87 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: 'Rubik', sans-serif;
+}
+
+p {
+    line-height: 1.4;
+}
+
+nav {
+    text-decoration: none;
+}
+
+button {
+    border: 2px solid #000000;
+    border-radius: 8px;
+    font-size: 14px;
+    padding-bottom: 3px;
+    width: 30%;
+    height: 35px;
+
+}
+
+
+
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -7,7 +91,7 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 10px;
-    padding-top: 50px;
+    padding-top: 60px;
 
 }
 
@@ -16,6 +100,7 @@
     color: grey;
     text-decoration: none;
     font-family: 'Roboto';
+    
 }
 
 .logo {
@@ -24,14 +109,71 @@
     padding-top: 5px;
 }
 
-.top-content {
-    display: flex;
+
+.jumbo-container {
+    display:flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    margin-bottom: 30px;
+    border-bottom: 1px dashed #000000;
+}
+.jumbo-aboutimg {
+    padding-bottom: 20px;
 }
 
-.jumbo-header {
+.text-container {
+    padding-bottom: 20px;
+    padding-left: 20px;
     
+}
+
+.middle-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+.middle-container div {
+    width: 370px;
+    height: 430px;
+    border-bottom: 1px dashed #000000;
+    margin-bottom: 30px;
+
+}
+
+.middle-container p {
+    padding-bottom: 20px;
+}
+
+.middle-container img {
+    padding-bottom: 20px;
+}
+
+.bottom-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+footer {
+    width: 100%;
+    background-color: #000000;
+}
+
+footer nav {
+    width: 60%;
+    font-size: 14px;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    padding: 20px;
+   
+    
+}
+
+footer nav a {
+    color: #fff;
+    text-decoration: none;
 }
